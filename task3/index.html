@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Temperature converter</title>
+</head>
+<body>
+    <section>
+    <div class="container">
+    <form id="calTemp" onsubmit="calculateTemp();
+    return false">
+    
+    <h1>Temperature converter</h1>
+        <br>
+
+<label for="temp">
+    Degree
+</label>
+
+<center>
+
+    
+<input type="text" id="temp" placeholder="Degree" name="temp" value=""> 
+<label >Type</label>
+
+<select name="temp_diff" id="temp_diff">
+    <option value="cel">&#176;Celsius</option>
+    <option value="fah">&#176;Fahrenheit</option>
+</select> 
+</center>
+
+<br>
+<center>
+<input type="submit" name="temp" id="submit">
+<input type="reset" name="temp" id="clear">
+<br>
+
+<span id="result"></span>
+</center>
+</form>
+</div>
+</section>
+<script src="script.js"></script>
+
+
+</body>
+</html>
